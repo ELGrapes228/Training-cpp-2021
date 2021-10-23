@@ -1,14 +1,14 @@
 ﻿#include <iostream>
 #include <string>
 
-class Strochka
+class Strochka	//вариант 17
 {
  public:
      Strochka()
      {
          chislo = 0;
      };
-     void replace_letter(char replace_what)
+     void replace_letter(char replace_what)	//заменяем все буквы "c" на первый элемент строки и считаем количество замен
      {
          int n;
          n = mnoga_bukaf.length();
@@ -21,19 +21,19 @@ class Strochka
              }
          }
      };
-     void set_string(std::string text)
+     void set_string(std::string text)	//ввод строки
      {
          mnoga_bukaf = text;
      };
-     void set_0()
+     void set_0()	//обнуление счётчика
      {
          chislo = 0;
      };
-     std::string get_string()
+     std::string get_string()	//вывод строки
      {
          return mnoga_bukaf;
      };
-     int get_number()
+     int get_number()	//вывод счётчика
      {
          return chislo;
      };
