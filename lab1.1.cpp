@@ -1,4 +1,5 @@
-﻿#include <iostream>
+//работа со структурами
+#include <iostream>
 
 struct students
 {
