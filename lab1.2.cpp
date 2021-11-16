@@ -1,4 +1,5 @@
-﻿#include <iostream>
+﻿//работа с классами
+#include <iostream>
 #include <string>
 
 class Strochka	//вариант 17
