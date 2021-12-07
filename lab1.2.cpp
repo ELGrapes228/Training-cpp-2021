@@ -7,7 +7,12 @@ class Strochka	//вариант 17
  public:
      Strochka()
      {
+         std::cout << "default" << std::endl;
          chislo = 0;
+     };
+     Strochka(std::string stroka, int zero = 0): mnoga_bukaf(stroka), chislo(zero)
+     {
+         std::cout << "parameters" << std::endl;
      };
      void replace_letter(char replace_what)	//заменяем все буквы "c" на первый элемент строки и считаем количество замен
      {
@@ -48,6 +53,7 @@ int main()
 {
     Strochka stroka;
     stroka.set_string("Give papa a cup of proper coffe in a copper coffe cup.");
+
     std::cout << "Original string:\n" << stroka.get_string() << "\n";
     stroka.replace_letter('c');
     std::cout << "\nString with replaced letters:\n" << stroka.get_string() << "\n";
